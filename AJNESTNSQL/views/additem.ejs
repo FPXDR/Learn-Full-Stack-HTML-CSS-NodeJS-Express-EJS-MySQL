@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โรงเบียร์ไทยแลนด์ Post Add Item</title>
+</head>
+<body>
+    <% if(typeof mesg!= "undefined") { %>
+    <h1><%= mesg %></h1>
+    <% } %>
+    <form action="/additem" method="post">
+        <div>
+            <p>id</p>
+            <input type="text" name="id" id="id">
+        </div>
+        <div>
+            <p>name</p>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <p>tagline</p>
+            <input type="text" name="tagline" id="tagline">
+        </div>
+        <div>
+            <p>description</p>
+            <input type="text" name="description" id="description">
+        </div>
+        <div>
+            <p>image</p>
+            <input type="text" name="image" id="image">
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

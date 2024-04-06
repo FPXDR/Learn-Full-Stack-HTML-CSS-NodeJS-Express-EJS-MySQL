@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="FPXD" content="Resume">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="FPXD" content="Resume">
+    <title>Resume Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <img class="Logo" src="/images/Logo.svg" alt="Logo">
+                <div class="Topnav">
+                    <a href="#about">About</a>
+                    <a href="#passions">Passions</a>
+                    <a href="#portfolio">Portfolio</a>
+                </div>
+            </nav>
+        </header>
+        <!-- Contents -->
+        <section class="info">
+            <img class="HI" src="/images/Hi.svg" alt="HI">
+            <h1 class="content_font1"><%=contrntfront1 %></h1>
+            <h2 class="content_font2"><%=contrntfront2 %></h2>
+            <h3 class="content_font3"><%=contrntfront3 %></br>
+            </h3>
+            <div class="icons">
+                    <div class="icon">
+                        <img src="/images/Instagramlogo.svg" alt="IG">
+                        </div>
+                    <div class="icon">
+                        <img src="/images/LinkedInlogo.svg" alt="Linked">
+                    </div>
+                    <div class="icon">
+                        <img src="/images/phonelogo.svg" alt="phone">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Picture -->
+        <section class="Picture">
+            <img src="/images/Pic.jpg" alt="Picture">
+        </section>
+        <!-- SKill -->
+        <section class="skill">
+            <img src="/images/Skill.svg" alt="skill">
+        </section>
+        
+        <!-- Frontend -->
+        <section class="frontend">
+            <!-- Add Parameters that forEach loop -->
+            <% obj_Frontend.forEach(function(frontend){ %> 
+                <p class="topinfo"><%=frontend.topinfo %></p>
+                <p class="infoskill1"><%=frontend.infoskill1 %>
+            </p>
+        </section>
+            <% }) %>
+        <!-- Backend -->
+        <section class="backend">
+            <!-- Add Parameters that forEach loop -->
+            <% obj_Backend.forEach(function(backend){ %>
+                <div class="topinfo2"><%=backend.topinfo2 %></div>
+                <div class="infoskill2"><%=backend.infoskill2 %></br>
+                </div>
+        </section>
+            <% }) %>
+    </main>
+</body>
+</html>

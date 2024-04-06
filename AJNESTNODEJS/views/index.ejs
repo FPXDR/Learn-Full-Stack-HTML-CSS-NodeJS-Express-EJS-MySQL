@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parin.Wtk</title>
+</head>
+<body>
+    <h1>This is NodeJs and EJS Workshop</h1>
+    <h2>Ii's vert Fun</h2>
+    <h3>By Parin.Wtk</h3>
+    <p><%= userid %></p>
+    <p><%= status %></p>
+    <% obj_user_list.forEach(function(user_list){ %>
+        <p><%= user_list.name %>
+        <%= user_list.address %>
+        <%= user_list.birth_year %></p>
+    <% }) %>
+</body>
+</html>

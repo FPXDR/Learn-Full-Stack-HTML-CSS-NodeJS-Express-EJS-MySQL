@@ -1,0 +1,20 @@
+{
+  "name": "ajnestnsql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nodejs_sql.js",
+  "scripts": {
+    "start": "nodemon nodejs_sql.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "my": "^0.3.3",
+    "mysql": "^2.18.1",
+    "sql": "^0.78.0"
+  }
+}

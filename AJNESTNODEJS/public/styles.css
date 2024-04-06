@@ -1,0 +1,280 @@
+/* Add google Fonts And tailwindcss */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100&display=swap');
+
+/* All Class using same dataset */
+:root{
+    /* Define Variables*/
+    --dark7530 : rgba(39, 39, 41, 0.75);
+    --light:#FFFFFF;
+    --transition: all 0.3s ease 0s; /* Define delay time */
+}
+
+/* All section */
+*{
+    /* Clear margin and padding */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%; /*Fixed height using */
+    overflow: auto;
+}
+body{
+    /* Gradient shade of color */
+    /*background: linear-gradient(
+        var(--dark7530) ,var(--dark7530)
+    ),
+    url(/images/BG.png);*/
+    background-image: url("/images/BG.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /* Fixed Scale Screen */
+}
+
+a, #about{
+    font-family: "Lato", sans-serif;
+    color: #82DB62;
+}
+
+a, .Logo{
+    cursor: pointer; /* Link Element Logo */
+}
+
+main{
+    height: 100;
+    display: grid; /* Work an grid */
+    grid-template-columns:minmax(60px, 1fr) repeat(6, minmax(60px, 190px)) minmax(60px 1fr);
+    padding: 10px
+}
+
+header{
+    grid-column: 1 / span 6;/* header start 2nd col and others last colum */
+}
+nav{
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+/* class */
+.Topnav{
+    margin-left: auto;
+}
+
+.Topnav a{
+    font-size: 2rem;
+    font-weight: 400%;
+    transition: var(--transition); /* action */
+}
+
+.Topnav a:hover{
+    color: rgb(17, 177, 110);
+}
+
+.Topnav a{
+    margin-right: 20px;
+}
+
+.info{
+    grid-column: 1 / span 2;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+.HI img{
+    margin: 30px;
+    display: flex;
+}
+
+.content_font1{
+    font-family: "Lato", sans-serif;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+    text-align-last: left;
+    text-align:start;
+}
+
+.content_font2{
+    font-family: "Lato",sans-serif;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+    text-align-last: left;
+    text-align:start;
+}
+
+.content_font3{
+    font-family: "Lato",sans-serif;
+    color: blanchedalmond;
+    font-size: 1.5rem;
+    text-align-last: left;
+    text-align:start;
+}
+
+.content_font4{
+    font-family: "Lato",sans-serif;
+    color: #ca610c;
+    font-size: 2rem;
+    text-align-last: center;
+    text-align: end;
+}
+
+.icons{
+    grid-column: 6;
+    display: flex;
+    margin: 10%;
+    padding-left: 140%;
+}
+
+.icon{
+    margin-right:20px;
+}
+
+.icon img{
+    width: 70px;
+    height: 70px;
+}
+
+.Picture{
+    grid-column: 4 / span 4;
+    padding-left: 50%;
+    display: flex;
+}
+
+.Picture img{
+    height: 400px;
+    width: 400px;
+    border-radius: 45% / 50%;
+}
+
+.skill{
+    grid-column: 2 / 6;
+    padding-left: 20%;
+}
+
+.frontend{
+    grid-column: 1;
+    display: grid;
+    align-items: left;
+    padding-left: 5%;
+    margin: 5%;
+}
+
+.topinfo{
+    font-family: "Lato",sans-serif;
+    color: #e20808;
+    font-size: 3rem;
+    display: grid;
+    align-items: stretch;
+    padding: 0 1%;
+}
+
+.infoskill1{
+    font-family: "Lato",sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align-last: left;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 1% 0%;
+    text-transform: capitalize;
+}
+
+.backend{
+    grid-column: 6;
+    display: grid;
+    align-items: left;
+    padding-right: 11%;
+    margin: 5%;
+}
+
+.topinfo2{
+    font-family: "Lato",sans-serif;
+    color: #1459d8;
+    font-size: 3rem;
+    display: grid;
+    align-items: stretch;
+    padding: 0 1%;
+}
+
+.infoskill2{
+    font-family: "Lato",sans-serif;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-align-last: left;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0% 1%;
+    text-transform: capitalize;
+}
+
+/* Responsive Website */
+@media  only screen and (max-width:1100px){
+    .icon img{
+        height: 100px;
+        width: auto;
+    }
+
+    .info {
+        grid-column: 1 / span 2;
+    }
+
+    .content_font1, .content_font2, .content_font3, .content_font4{
+        font-size: 2rem;
+    }
+    .Picture {
+        height: 300px;
+        width: auto;
+    }
+
+    .skill {
+        grid-column: 2 / 6;
+    }
+    
+    .frontend{
+        grid-column: 1;
+    }
+
+    .backend{
+        grid-column: 6;
+    }
+}
+
+@media  only screen and (max-width:850px) {
+    .info{
+        grid-column: 1 / span 2;
+    }
+    
+    .icons{
+        flex-direction: row;
+        padding-right: 30%;
+    }
+
+    .content_font1, .content_font2, .content_font3, .content_font4{
+        font-size: 1.5rem;
+    }
+    .Picture {
+        height: 300px;
+        width: auto;
+    }
+
+    .skill {
+        flex-direction: column;
+    }
+    
+    .frontend{
+        flex-direction: column;
+    }
+
+    .backend{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
